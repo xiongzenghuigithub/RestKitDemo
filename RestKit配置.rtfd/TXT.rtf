@@ -1,0 +1,273 @@
+{\rtf1\ansi\ansicpg936\cocoartf1343\cocoasubrtf140
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 STHeitiSC-Light;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red14\green0\blue0;\red247\green247\blue247;\red217\green11\blue0;
+\red11\green87\blue42;\red90\green41\blue20;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww18880\viewh9840\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs48 \cf0 1. 
+\f1 \'b0\'b2\'d7\'b0
+\f0 cocoapods\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\fs32 \cf0 	1) 
+\f1 \'cc\'e6\'bb\'bb\'d4\'b4\'ce\'aa\'cc\'d4\'b1\'a6\'b5\'c4
+\f0 \
+		gem sources --remove https://rubygems.org/ \
+		gem sources -a http://ruby.taobao.org/ \
+		http://ruby.taobao.org/\
+\
+	2) 
+\f1 \'cf\'c2\'d4\'d8\'b0\'b2\'d7\'b0
+\f0 \
+		sudo gem install cocoapods \
+\
+
+\f1      	3)\'ca\'b9\'d3\'c3
+\f0 CocoaPods
+\f1 \'b5\'bc\'c8\'eb\'c0\'e0\'bf\'e2
+\f0 :\
+\
+		3.1) 
+\f1 \'d4\'da\'b9\'a4\'b3\'cc\'b8\'f9\'c4\'bf\'c2\'bc\'b4\'b4\'bd\'a8
+\f0 Podfile
+\f1 \'ce\'c4\'bc\'fe
+\f0 \
+			touch Podfile\
+\
+		3.2) 
+\f1 \'d4\'da
+\f0 Podfile
+\f1 \'ce\'c4\'bc\'fe\'ca\'e4\'c8\'eb\'b5\'bc\'c8\'eb\'b5\'c4\'c0\'e0\'bf\'e2
+\f0 \
+			
+\f1 \'ce\'c4\'b1\'be\'b1\'e0\'bc\'ad\'c6\'f7\'b4\'f2\'bf\'aa
+\f0 Podfile
+\f1 \'ce\'c4\'bc\'fe
+\f0 \
+		\
+			
+\f1 \'c8\'e7
+\f0 :\
+				platform :ios, '6.1'\
+				pod 'RestKit', '~> 0.23.3'\
+\
+		3.3) 
+\f1 \'d6\'b4\'d0\'d0
+\f0 pod install
+\f1 \'c3\'fc\'c1\'ee
+\f0  (
+\f1 \'d4\'da
+\f0 Podfile
+\f1 \'ce\'c4\'bc\'fe\'b5\'c4\'b5\'b1\'c7\'b0\'c2\'b7\'be\'b6
+\f0 )\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\fs48 \cf0 2. 
+\f1 \'ca\'b9\'d3\'c3
+\f0 cocoapods
+\f1 \'b0\'b2\'d7\'b0
+\f0 RestKit\
+\
+\pard\pardeftab720\sl300
+
+\f2\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+	cd 
+\f1 \'cf\'ee\'c4\'bf\'b5\'c4\'b8\'f9\'c4\'bf\'c2\'bc
+\f2 \
+	touch Podfile\
+	
+\f1 \'b1\'e0\'bc\'ad
+\f2 Podfile
+\f1 \'a3\'ac\'ca\'e4\'c8\'eb
+\f2 :\
+		platform :ios, '5.0'\
+		pod 'RestKit', '~> 0.23.3\'92\
+	pod install\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs48 \cf0 \cb1 \kerning1\expnd0\expndtw0 3. 
+\f1 \'ca\'b9\'d3\'c3
+\f0 git
+\f1 \'cf\'c2\'d4\'d8
+\f0 RestKit
+\f1 \'d2\'c0\'c0\'b5\'b5\'c4\'bf\'e2
+\f0 \
+	 
+\f2\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+$ cd 
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\'cf\'ee\'c4\'bf\'b5\'c4\'b8\'f9\'c4\'bf\'c2\'bc
+\f2 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl300
+\cf2 \expnd0\expndtw0\kerning0
+	$ git init \
+	$ git submodule add git://github.com/RestKit/RestKit.git RestKit\
+		\cf4 \expnd0\expndtw0\kerning0
+(
+\f1 \'b4\'ed\'ce\'f3\'a3\'ba
+\f2  fatal: unable to connect to github.com 
+\f1 \'bd\'e2\'be\'f6
+\f2 : git config --global url."https://".insteadOf git://)\cf2 \expnd0\expndtw0\kerning0
+\
+	$ git submodule update --init --recursive\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs48 \cf0 \cb1 \kerning1\expnd0\expndtw0 4. 
+\f1 \'c5\'e4\'d6\'c3
+\f0 RestKit
+\f1  \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\fs28 \cf0 1) \'bd\'abRestKit\'cf\'ee\'c4\'bf\'b5\'c4Xcodeproj\'ce\'c4\'bc\'fe\'cd\'cf\'b5\'bd\'cf\'ee\'c4\'bf
+\f2\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl300
+\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0 \cf0 \cb1 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Pasted Graphic 1.tiff \width8580 \height3720
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 \
+2) 
+\fs32 \expnd0\expndtw0\kerning0
+ 
+\b \cf5 \expnd0\expndtw0\kerning0
+Build Settings
+\b0 \cf0 \expnd0\expndtw0\kerning0
+ filter for 
+\b \cf5 \expnd0\expndtw0\kerning0
+Other Linker Flags
+\b0 \cf0 \expnd0\expndtw0\kerning0
+ in the search box. Click the value column to the right of 
+\b \cf5 \expnd0\expndtw0\kerning0
+Other Linker Flags
+\b0 \cf0 \expnd0\expndtw0\kerning0
+, add 
+\b\fs28 \cf5 \expnd0\expndtw0\kerning0
+-ObjC
+\b0\fs32 \cf0 \expnd0\expndtw0\kerning0
+ an\
+\
+3) 
+\b \cf5 \expnd0\expndtw0\kerning0
+Header Search Paths
+\b0 \cf0 \expnd0\expndtw0\kerning0
+, add 
+\b\fs28 \cf5 \expnd0\expndtw0\kerning0
+"$(BUILT_PRODUCTS_DIR)/../../Headers"
+\b0\fs32 \cf0 \expnd0\expndtw0\kerning0
+ \
+\
+4)  
+\b \cf5 \expnd0\expndtw0\kerning0
+Build Phases
+\b0 \cf0 \expnd0\expndtw0\kerning0
+ tab, click on the disclosure triangle for 
+\b \cf5 \expnd0\expndtw0\kerning0
+Target Dependencies
+\b0 \cf0 \expnd0\expndtw0\kerning0
+, and tap the 
+\b \cf5 \expnd0\expndtw0\kerning0
+Add (+)
+\b0 \cf0 \expnd0\expndtw0\kerning0
+ button. Select 
+\b \cf5 \expnd0\expndtw0\kerning0
+RestKit
+\b0 \cf0 \expnd0\expndtw0\kerning0
+ and click 
+\b \cf5 \expnd0\expndtw0\kerning0
+Add
+\b0 \cf0 \expnd0\expndtw0\kerning0
+.\
+\
+5) 
+\b \cf5 \expnd0\expndtw0\kerning0
+Link Binary With Libraries
+\b0 \cf0 \expnd0\expndtw0\kerning0
+ disclosure triangle and tap the 
+\b \cf5 \expnd0\expndtw0\kerning0
+Add (+)
+\b0 \cf0 \expnd0\expndtw0\kerning0
+ button. Select 
+\b \cf5 \expnd0\expndtw0\kerning0
+libRestKit.a
+\b0 \cf0 \expnd0\expndtw0\kerning0
+ and click 
+\b \cf5 \expnd0\expndtw0\kerning0
+Add
+\b0 \cf0 \expnd0\expndtw0\kerning0
+.\
+\
+6) \kerning1\expnd0\expndtw0 	
+\f1 \'cc\'ed\'bc\'d3\'c6\'e4\'cb\'fb\'d2\'c0\'c0\'b5\'bf\'e2
+\f0 \
+   \'95	\expnd0\expndtw0\kerning0
+CFNetwork.framework\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl517\sa200
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+CoreData.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+MobileCoreServices.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+Security.framework\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+SystemConfiguration.framework\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\b \cf5 \expnd0\expndtw0\kerning0
+7) CoffeeKit-Prefix.pch\
+	
+\f2\b0\fs24 \cf6 \cb3 \expnd0\expndtw0\kerning0
+#ifndef __IPHONE_5_0\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl300
+\cf6 \expnd0\expndtw0\kerning0
+#warning "This project uses features only available in iOS SDK 5.0 and later."\cf2 \expnd0\expndtw0\kerning0
+\
+\cf6 \expnd0\expndtw0\kerning0
+#endif\cf2 \expnd0\expndtw0\kerning0
+\
+\'a0\
+\cf6 \expnd0\expndtw0\kerning0
+#ifdef __OBJC__\cf2 \expnd0\expndtw0\kerning0
+\
+    \cf6 \expnd0\expndtw0\kerning0
+#import <UIKit/UIKit.h>\cf2 \expnd0\expndtw0\kerning0
+\
+    \cf6 \expnd0\expndtw0\kerning0
+#import <Foundation/Foundation.h>\cf2 \expnd0\expndtw0\kerning0
+\
+    \cf6 \expnd0\expndtw0\kerning0
+#import <SystemConfiguration/SystemConfiguration.h>\cf2 \expnd0\expndtw0\kerning0
+\
+    \cf6 \expnd0\expndtw0\kerning0
+#import <MobileCoreServices/MobileCoreServices.h>\cf2 \expnd0\expndtw0\kerning0
+\
+\cf6 \expnd0\expndtw0\kerning0
+#endif\cf2 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf2 \expnd0\expndtw0\kerning0
+\
+\
+\
+\
+\
+\
+Rest
+\f1 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\'b7\'fe\'ce\'f1\'c6\'f7
+\f2 \cf2 \cb3 \expnd0\expndtw0\kerning0
+api:  {\field{\*\fldinst{HYPERLINK "https://developer.foursquare.com/docs/"}}{\fldrslt https://developer.foursquare.com/docs/}}}
